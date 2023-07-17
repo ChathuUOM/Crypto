@@ -1,0 +1,56 @@
+body {
+    background-image: url("../../Images/login-registration-bg.png");
+    background-size : cover;
+    width           : 100%;
+    height          : 100%;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    font-family     : 'Inter', sans-serif;
+    padding         : 20px;
+}
+
+.wrap {
+    width             : 100%;
+    overflow          : hidden;
+    -webkit-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow   : 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+    box-shadow        : 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+}
+
+.left-section,
+.right-section {
+    width: 50%;
+}
+
+
+.right-section {
+    position: relative;
+}
+
+.coin-wrap {
+    max-width: 895px;
+
+    .container {
+        background   : linear-gradient(0deg, rgba(12, 19, 29, 0.102) 0%, #506C89 100%);
+        border-radius: 10px;
+
+        .left-col {
+            padding: 90px 50px;
+        }
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    font-size : 11px;
+    color     : $light-gray;
+}
+
+.w-100 {
+    width: 100% !important;
+}

@@ -1,0 +1,141 @@
+<div class="coin-wrap">
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-6 left-col">
+                <picture>
+                    <source media="(min-width:768px)" srcset="../../../assets/Images/logo-coin.png">
+                    <source media="(min-width:576px)" srcset="../../../assets/Images/logo-coin-75.png">
+                    <source media="(min-width:250px)" srcset="../../../assets/Images/logo-coin-50.png">
+                    <img src="../../../assets/Images/logo-coin.png" alt="COINVISTA" style="width:auto;">
+                </picture>
+                <div class="p-typo mb-35 mt-15">
+                    <img src="../../../assets/Images/logo-coin-50.png" alt="COINVISTA">
+                    the complete Multi-Exchange Cryptocurrency Terminal to organize your Info, Research
+                    & Trading.
+                </div>
+                <div class="p-typo">To enable FREE access please sign up and your Account Login will be made
+                    available
+                    following registration and email verification.</div>
+                <button type="button" class="btn coin-btn coin-btn--primary mt-20 w-100"
+                    (click)="navToLogin()">Login</button>
+            </div>
+            <div class="col-md-6">
+                <form class="coin-form mt-20 mb-20" autocomplete="off">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control input-typo mb-10" placeholder="Name"
+                                autocomplete="off">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control input-typo mb-10" placeholder="Surname"
+                                autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control input-typo mb-10" placeholder="Company"
+                                autocomplete="off">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control input-typo mb-10" placeholder="Address St"
+                                autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control input-typo mb-10" placeholder="Address City"
+                                autocomplete="off">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control input-typo mb-10" placeholder="Address Country"
+                                autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <input type="text" class="form-control input-typo mb-10" placeholder="Postcode"
+                                autocomplete="off">
+                        </div>
+                        <div class="form-group col-md-8">
+                            <input type="text" class="form-control input-typo mb-10" placeholder="Address"
+                                autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="tel" class="form-control input-typo mb-10" placeholder="Mobile"
+                                autocomplete="off">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="url" class="form-control input-typo mb-10" placeholder="Website"
+                                autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control input-typo mb-10" placeholder="E-mail"
+                                autocomplete="nope">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control input-typo mb-10" placeholder="E-mail Re-enter"
+                                autocomplete="nope">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <input type="password" class="form-control input-typo mb-10" placeholder="Password"
+                                autocomplete="nope">
+                        </div>
+                    </div>
+                    <div class="row mb-10">
+                        <div class="form-group col-md-4 icon-input">
+                            <div class="input-container">
+                                <i class="fa fa-telegram"></i>
+                                <input type="text" class="form-control input-typo" id="telegramID"
+                                    autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4 icon-input">
+                            <div class="input-container">
+                                <img src="../../../assets/Images/linkedin.png" class="icon-sm">
+                                <input type="text" class="form-control input-typo" id="linkedin"
+                                    autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4 icon-input">
+                            <div class="input-container">
+                                <i class="fa fa-twitter"></i>
+                                <input type="text" class="form-control input-typo" id="twitter"
+                                    autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dis-flex agreement">
+                        <img src="../../../assets/Images/question.png" class="icon-sm__q">
+                        <span class="info-typo-primary">I accept the </span>
+                        <span class="info-typo"> terms and conditions.</span>
+                    </div>
+                    <div class="row mt-8">
+                        <div class="form-group">
+                            <button type="button" class="btn coin-btn coin-btn--secondary w-100 mb-10" (click)="navToNews()">SIGN UP</button>
+                        </div>
+                    </div>
+                    <div class="icon-set-wrapper">
+                        <div class="txt">
+                            <span class="info-typo-primary mr-8">Sign up with </span>
+                        </div>
+                        <button type="button" class="btn coin-icon-btn coin-icon-btn--red mr-8">
+                            <i class="fa fa-google"></i>
+                        </button>
+                        <button type="button" class="btn coin-icon-btn coin-icon-btn--purple mr-8">
+                            <i class="fa fa-facebook"></i>
+                        </button>
+                        <button type="button" class="btn coin-icon-btn coin-icon-btn--light-blue">
+                            <i class="fa fa-twitter"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

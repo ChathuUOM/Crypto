@@ -1,0 +1,79 @@
+/* Box Button Styling */
+
+@mixin a-box-btn ($bg, $border) {
+  background-color: $bg !important;
+  border-color    : $border !important;
+}
+
+@mixin a-icon-btn ($border, $color) {
+  border: 1px solid $border;
+  color : $color !important;
+}
+
+.coin-btn {
+  height       : 44px;
+  width        : inherit;
+  border-radius: 4px;
+  border-style : none;
+  @extend .btn-typo;
+
+  &--primary {
+    @include a-box-btn($primary, none);
+  }
+
+  &--secondary {
+    @include a-box-btn($input, none);
+  }
+
+  &:focus {
+    opacity   : 0.8;
+    box-shadow: none !important;
+  }
+}
+
+.coin-icon-btn {
+  height         : 43px;
+  width          : 60px;
+  padding        : 14px 20px;
+  display        : inline-flex;
+  background     : transparent;
+  border-radius  : 4px;
+  align-items    : center;
+  justify-content: center;
+
+  @include media-breakpoint-down(lg) {
+    width  : 60px;
+    padding: 14px 20px
+  }
+
+  &--red {
+    @include a-icon-btn($red, $red);
+  }
+
+  &--purple {
+    @include a-icon-btn($purple, $purple);
+  }
+
+  &--light-blue {
+    @include a-icon-btn($light-blue, $light-blue);
+  }
+
+  &--dark-blue {
+    @include a-icon-btn($dark-blue, $dark-blue);
+  }
+
+  &--blue-green {
+    @include a-icon-btn($blue-green, $blue-green);
+  }
+
+  &--white {
+    @include a-icon-btn($white, $white);
+  }
+
+  i {
+    font-style    : normal;
+    font-weight   : 400;
+    font-size     : 16px;
+    line-height   : 16px;
+  }
+}

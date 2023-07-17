@@ -1,0 +1,298 @@
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+label {
+    @extend .p-typo;
+}
+
+form {
+    &:not(.no-border)::placeholder {
+        @extend .input-typo;
+    }
+}
+
+.no-border::placeholder {
+    @extend .input-typo-pri-i;
+    color: $primary !important;
+}
+
+
+.coin-form {
+    background-color: $surface;
+    margin          : 20px 10px;
+    padding         : 20px 45px;
+    border-radius   : 8px;
+
+    @include media-breakpoint-down(sm) {
+        max-height: 300px;
+        display   : inline-block;
+        overflow  : auto;
+
+        .forgot-txt {
+            text-align: start;
+        }
+    }
+
+    .form-group {
+
+        .form-control {
+            outline: none !important;
+            border : 1px solid $input;
+            width  : 100%;
+
+            &:focus,
+            &:active {
+                outline           : none !important;
+                -webkit-box-shadow: none;
+                box-shadow        : none;
+            }
+        }
+
+        input {
+            @extend .ellipsis;
+            background-color: $input;
+            border-color    : $input;
+            padding         : 8px 10px;
+            border-radius   : 4px;
+        }
+
+        &.no-border {
+            .form-control {
+                background   : transparent;
+                border       : none;
+                border-bottom: 1px solid $primary;
+            }
+
+            input {
+                border-radius: 0;
+            }
+        }
+    }
+
+    .input-container {
+        position: relative;
+    }
+
+    .input-container i,
+    .input-container img {
+        position : absolute;
+        top      : 50%;
+        left     : 10px;
+        transform: translateY(-50%);
+        color    : $white;
+        font-size: 12px;
+    }
+
+    input:-internal-autofill-selected {
+        background-image: none !important;
+        background-color: $input !important;
+    }
+
+    &--login {
+
+        .icon-set-wrapper {
+            @include media-breakpoint-down(lg) {
+                --bs-gutter-x: 1.5rem;
+                --bs-gutter-y: 0;
+                display      : flex;
+                flex-wrap    : wrap;
+                margin-top   : calc(-1 * var(--bs-gutter-y));
+                margin-right : calc(-.5 * var(--bs-gutter-x));
+                margin-left  : calc(-.5 * var(--bs-gutter-x));
+            }
+        }
+
+        .coin-icon-btn {
+            padding: 14px 15px;
+
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 10px;
+            }
+        }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus {
+            -webkit-text-fill-color: var(--primary) !important;
+        }
+    }
+
+}
+
+.icon-sm {
+    font-size: 12px;
+
+    &__q {
+        height       : 14px;
+        width        : 15px;
+        margin-top   : 1px;
+        padding-right: 2px;
+    }
+}
+
+.icon-input {
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 10px;
+    }
+
+    input {
+        padding-left: 30px !important;
+    }
+}
+
+/* Target all input fields */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-text-fill-color: $white !important;
+    transition             : background-color 5000s ease-in-out 0s;
+}
+
+/* Set a custom background color for the input field */
+input:-webkit-autofill {
+    -webkit-box-shadow: none !important;
+    background-color  : $input !important;
+}
+
+
+/* Target all input fields - Opera */
+input:-o-autofill,
+input:-o-autofill:hover,
+input:-o-autofill:focus {
+    -webkit-text-fill-color: $white !important;
+    transition             : background-color 5000s ease-in-out 0s;
+}
+
+/* Set a custom background color for the input field */
+input:-o-autofill {
+    -webkit-box-shadow: none !important;
+    background-color  : $input !important;
+}
+
+button {
+    box-shadow: none;
+    outline   : none;
+
+    &:focus {
+        box-shadow: none;
+        outline   : none;
+    }
+}
+
+.agreement {
+    text-align : center;
+    align-items: self-end;
+
+    @include media-breakpoint-down(lg) {
+        text-align : unset;
+        align-items: unset;
+    }
+
+    span {
+        &::after {
+            content: "\00a0";
+        }
+    }
+}
+
+.icon-set-wrapper {
+    justify-content: space-between;
+    display        : flex;
+
+    .txt {
+        display    : flex;
+        align-items: center;
+
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+    }
+}
+
+.register {
+    .icon-set-wrapper {
+        @include media-breakpoint-down(lg) {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display      : flex;
+            flex-wrap    : wrap;
+            margin-top   : calc(-1 * var(--bs-gutter-y));
+            margin-right : calc(-.5 * var(--bs-gutter-x));
+            margin-left  : calc(-.5 * var(--bs-gutter-x));
+        }
+    }
+}
+
+.forgot-txt {
+    text-align: end;
+}
+
+.dark-gray-txt {
+    color: $dark-gray;
+}
+
+// Horizontal bar 
+.hrz-separator {
+    display    : flex;
+    align-items: center;
+    text-align : center;
+}
+
+.hrz-separator::before {
+    content           : '';
+    flex              : 1;
+    border-bottom     : 2px solid transparent;
+    border-image      : linear-gradient(0.25turn, rgba(56, 2, 155, 0), $primary);
+    border-image-slice: 1;
+    width             : 100%;
+}
+
+.hrz-separator::after {
+    content           : '';
+    flex              : 1;
+    border-bottom     : 2px solid transparent;
+    border-image      : linear-gradient(0.25turn, $primary, rgba(56, 2, 155, 0));
+    border-image-slice: 1;
+    width             : 100%;
+}
+
+.hrz-separator:not(:empty)::before {
+    margin-right: .5em;
+}
+
+.hrz-separator:not(:empty)::after {
+    margin-left: .5em;
+}
+
+// Checkbox 
+.custom-checkbox {
+    -webkit-appearance: none;
+    /* Remove default checkbox appearance on webkit browsers */
+    -moz-appearance   : none;
+    /* Remove default checkbox appearance on Mozilla Firefox */
+    appearance        : none;
+    /* Remove default checkbox appearance on other browsers */
+    width             : 15px;
+    height            : 15px;
+    border            : 1px solid $black;
+    outline           : none;
+    background        : $white;
+}
+
+.custom-checkbox:checked {
+    display         : inline-block;
+    background-color: transparent;
+    border          : 1px solid transparent;
+}
+
+.custom-checkbox:checked::after {
+    border-radius   : 2px;
+    content         : "\2713";
+    display         : contents;
+    width           : 10px;
+    height          : 10px;
+    color           : $primary;
+    font-size       : 10px;
+}

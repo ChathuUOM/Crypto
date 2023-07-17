@@ -1,0 +1,42 @@
+<div class="news">
+    <div class="news__header">
+        <div class="h-typo-normal float-left">News</div>
+        <div class="settings float-right">
+            <i class="fa fa-external-link" aria-hidden="true"></i>
+            <i class="fa fa-comment" aria-hidden="true"></i>
+            <i class="fa fa-link" aria-hidden="true"></i>
+            <i class="fa fa-expand" aria-hidden="true"></i>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="news__search">
+        <div class="search-item mr-10">
+            <span class="p-typo blue-txt">Filter</span>
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="search-item">
+            <span class="p-typo blue-txt">All Providers</span>
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="search-item">
+            <span class="p-typo blue-txt">Favorites</span>
+            <i class="fa fa-star"></i>
+        </div>
+    </div>
+    <div class="news__content">
+        <div class="record" *ngFor="let record of records">
+            <div class="record__img">
+                <img src="{{record.img}}" alt="News Image">
+            </div>
+            <div class="record__description">
+                <div class="h-typo">{{record.header}}</div>
+                <div class="p-typo dark-gray-txt pb-10 pt-10">{{record.owner}}</div>
+                <div class="p-typo">{{record.description}}</div>
+            </div>
+            <div class="record__actions">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-volume-up"></i>
+            </div>
+        </div>
+    </div>
+</div>

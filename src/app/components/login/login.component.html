@@ -1,0 +1,81 @@
+<div class="coin-wrap">
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-6 left-col">
+                <img src="../../../assets/Images/logo.png" alt="COINVISTA" style="width:auto;">
+                <div class="p-typo mb-35 mt-15">
+                    Welcome to this Beta version, providing you with access to market data accross multiple exchanges as
+                    well as news and information tools.
+                </div>
+                <button type="button" class="btn coin-btn coin-btn--primary mt-20 w-100" (click)="navToReg()">Register
+                    Now</button>
+            </div>
+            <div class="col-md-6">
+                <form class="coin-form coin-form--login mt-20 mb-0" autocomplete="off">
+                    <div>
+                        <div class="h-typo p-16 pl-0">Account Login</div>
+                        <div class="row">
+                            <div class="form-group no-border">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" class="form-control input-typo-pri-i mb-20 font-italic"
+                                    placeholder="Username" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group no-border">
+                                <label for="pw">Password</label>
+                                <input type="password" name="pw" class="form-control input-typo-pri-i mb-20 font-italic"
+                                    placeholder="Password" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="row mb-20">
+                            <div class="col-md-6">
+                                <input type="checkbox" class="custom-checkbox custom-control-input" id="customCheck1">
+                                <label class="info-typo-primary pl-10" for="customCheck1">Remember me</label>
+                            </div>
+                            <div class="col-md-6 forgot-txt dark-gray-txt">
+                                Forgot Password?
+                            </div>
+                        </div>
+                        <div class="row mt-8">
+                            <div class="form-group">
+                                <button type="button"
+                                    class="btn coin-btn coin-btn--secondary w-100 mb-10" (click)="navToNews()">Login</button>
+                            </div>
+                        </div>
+                        <div class="dis-flex agreement mt-10 mb-20 jus-con-center">
+                            <span class="info-typo">Don't have an account yet? </span>
+                            <span class="info-typo-primary pointer" (click)="navToReg()"> Register</span>
+                        </div>
+                        <div class="hrz-separator info-typo-primary mb-10">Sign up with</div>
+                        <div class="icon-set-wrapper">
+                            <button type="button" class="btn coin-icon-btn coin-icon-btn--purple mr-8">
+                                <i class="fa fa-facebook"></i>
+                            </button>
+                            <button type="button" class="btn coin-icon-btn coin-icon-btn--light-blue mr-8">
+                                <i class="fa fa-twitter"></i>
+                            </button>
+                            <button type="button" class="btn coin-icon-btn coin-icon-btn--dark-blue mr-8">
+                                <i class="fa fa-windows"></i>
+                            </button>
+                            <button type="button" class="btn coin-icon-btn coin-icon-btn--white mr-8">
+                                <i class="fa fa-github"></i>
+                            </button>
+                            <button type="button" class="btn coin-icon-btn coin-icon-btn--red mr-8">
+                                <i class="fa fa-google"></i>
+                            </button>
+                            <button type="button" class="btn coin-icon-btn coin-icon-btn--blue-green mr-8">
+                                <i class="fa fa-linkedin"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="footer">
+                    <span>Copyright &copy; <span class="year">,</span>
+                        Coinvista AG, Gotthardstrasse 26,6300, Zug, Switzerland
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
